@@ -1,0 +1,22 @@
+{
+  "name": "bysykkel_node",
+  "version": "1.0.0",
+  "description": "Reads data frm Oslo bysykkel API and store the data in urbalurba.no (a ckna.org system)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terchris/bysykkel_node.git"
+  },
+  "keywords": [
+    "ckan"
+  ],
+  "author": "Terje Christensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terchris/bysykkel_node/issues"
+  },
+  "homepage": "https://github.com/terchris/bysykkel_node#readme"
+}
