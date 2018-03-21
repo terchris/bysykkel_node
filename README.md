@@ -12,3 +12,6 @@ I followed this simple tutorial to write a node program https://codeburst.io/bui
 And this setup on how to set up debugging of node in vscode
 https://code.visualstudio.com/docs/editor/debugging
 
+#gitignore
+https://github.com/github/gitignore/blob/master/Node.gitignore
+
