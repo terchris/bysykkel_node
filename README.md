@@ -38,6 +38,21 @@ https://www.npmjs.com/package/ckan and https://github.com/okfn/ckan.js
 ## CKAN realtime
 http://alexandrainst.github.io/ckanext-realtime/tutorial.html
 
+## CKAN API to add and update data in a dataset
+
+Insert data into the CKAN Datastore
+~$ curl -X POST http://www.civicdata.com/api/3/action/datastore_create \
+-H "Authorization: <API-KEY>" \
+-d '{"resource_id": "86a702f4-2d3a-4ee9-b375-26bc2800cba5", "fields": [ {"id": "a"}, {"id": "b"} ], "records": [ { "a": 1, "b": "XYZ"}, {"a": 2, "b": "ZZZ"} ], "primary_key": ["a"], "force": "True"}'
+
+Update data in the CKAN Datastore
+~$ curl -X POST http://www.civicdata.com/api/3/action/datastore_upsert \
+-H "Authorization: <API-KEY>" \
+-d '{"resource_id": "86a702f4-2d3a-4ee9-b375-26bc2800cba5", "method": "upsert", "records": [ { "a": 1, "b": "XYZXYZXYZ"}, {"a": 2, "b": "ZZZZZZZZZ"} ],"force": "True"}'
+
+
+
+
 ## CKAN update stuff
 Update a record in a CKAN dataset using API
 Hi
