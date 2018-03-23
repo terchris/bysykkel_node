@@ -1,0 +1,48 @@
+{
+    "help": "http://urbalurba.no/api/3/action/help_show?name=datastore_upsert",
+    "success": true,
+    "result": {
+        "records": [
+            {
+                "myJsonField": [
+                    "{\"city\": \"Oslo\", \"age\": \"23\"}",
+                    ""
+                ],
+                "myTrueFalse": true,
+                "name": "2nd  insert",
+                "recordID": 1001,
+                "timeStamp": "2018-03-14T05:51:36",
+                "myText": "Hello world record id=1001",
+                "longitude": 10.762248,
+                "value": 100,
+                "latitude": 59.91562
+            }
+        ],
+        "method": "upsert",
+        "resource_id": "3ae312b4-0e9b-4542-92b7-cf017b586f0c"
+    }
+},
+{
+    "help": "http://urbalurba.no/api/3/action/help_show?name=datastore_upsert",
+    "success": true,
+    "result": {
+        "records": [
+            {
+                "myJsonField": [
+                    "{\"city\": \"Oslo\", \"age\": \"23\"}",
+                    ""
+                ],
+                "myTrueFalse": true,
+                "name": "2nd  insert",
+                "recordID": 1001,
+                "timeStamp": "2018-03-14T05:51:36",
+                "myText": "Hello world record id=1001",
+                "longitude": 10.762248,
+                "value": 100,
+                "latitude": 59.91562
+            }
+        ],
+        "method": "upsert",
+        "resource_id": "3ae312b4-0e9b-4542-92b7-cf017b586f0c"
+    }
+}

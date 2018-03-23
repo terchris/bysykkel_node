@@ -1,4 +1,17 @@
-[
+
+var CKAN = require('ckan')
+var myAPIkey = "abcxyz-your-api-key-here";
+var resource_id = "d39ada81-b6ec-4a01-bc7b-6967ebe69020";
+var myCKANhost = "http://urbalurba.no";
+
+
+
+var client = new CKAN.Client(myCKANhost, myAPIkey);
+
+
+
+
+var myRecord = [
     {
         "stationID": 178,
         "name": "Colosseum Kino",
@@ -2254,4 +2267,30 @@
         "availableLocks": 30,
         "timeStamp": "2018-03-23T11:44:41+00:00"
     }
-]
+];
+
+
+
+
+  client.action('datastore_upsert', {
+              resource_id:  resource_id,
+              records: myRecord,
+              method: 'upsert',
+              force: 'True'
+          },
+          function(err, result) {
+            if (err) {
+                console.log("datastore_upsert Not successfull:", JSON.stringify(err));
+            }
+            else { //we got something. Lets see what it is
+        
+                if (result.success){ //We got a sucessfull response
+                    console.log("datastore_upsert:", JSON.stringify(result));
+                } else { //we got a nonsucessful response. handle it here
+                    console.log("datastore_upsert Not successfull:", JSON.stringify(result));
+        
+                }
+            }
+          });
+                  
+

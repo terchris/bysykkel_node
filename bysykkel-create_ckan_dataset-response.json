@@ -1,0 +1,53 @@
+{
+    "help": "http://urbalurba.no/api/3/action/help_show?name=datastore_create",
+    "success": true,
+    "result": {
+        "fields": [
+            {
+                "type": "numeric",
+                "id": "stationID"
+            },
+            {
+                "type": "text",
+                "id": "name"
+            },
+            {
+                "type": "text",
+                "id": "where"
+            },
+            {
+                "type": "numeric",
+                "id": "latitude"
+            },
+            {
+                "type": "numeric",
+                "id": "longitude"
+            },
+            {
+                "type": "numeric",
+                "id": "locksOnStation"
+            },
+            {
+                "type": "numeric",
+                "id": "availableBikes"
+            },
+            {
+                "type": "numeric",
+                "id": "availableLocks"
+            },
+            {
+                "type": "timestamp",
+                "id": "timeStamp"
+            }
+        ],
+        "method": "insert",
+        "resource": {
+            "url": "_datastore_only_resource",
+            "mimetype": null,
+            "package_id": "tilgjengelige-bysykler",
+            "name": "Automatisk oppdatert oversikt over ledige bysykler"
+        },
+        "primary_key": "stationID",
+        "resource_id": "d39ada81-b6ec-4a01-bc7b-6967ebe69020"
+    }
+}

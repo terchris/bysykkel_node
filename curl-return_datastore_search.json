@@ -1,0 +1,65 @@
+{
+    "help": "http://urbalurba.no/api/3/action/help_show?name=datastore_search",
+    "success": true,
+    "result": {
+        "include_total": true,
+        "resource_id": "59c5a78f-9b23-4b89-994a-6d24bb3bf68f",
+        "fields": [
+            {
+                "type": "int",
+                "id": "_id"
+            },
+            {
+                "type": "numeric",
+                "id": "recordID"
+            },
+            {
+                "type": "text",
+                "id": "name"
+            },
+            {
+                "type": "numeric",
+                "id": "value"
+            },
+            {
+                "type": "numeric",
+                "id": "latitude"
+            },
+            {
+                "type": "numeric",
+                "id": "longitude"
+            },
+            {
+                "type": "timestamp",
+                "id": "timeStamp"
+            }
+        ],
+        "records_format": "objects",
+        "records": [
+            {
+                "_id": 1,
+                "recordID": 10,
+                "name": "roomtemp",
+                "value": 16,
+                "latitude": 59.91562,
+                "longitude": 10.762248,
+                "timeStamp": "2018-03-14T05:51:36"
+            },
+            {
+                "_id": 2,
+                "recordID": 20,
+                "name": "fish",
+                "value": 233,
+                "latitude": 59.939192,
+                "longitude": 10.759168,
+                "timeStamp": "2018-03-15T06:51:36"
+            }
+        ],
+        "limit": 10,
+        "_links": {
+            "start": "/api/3/action/datastore_search",
+            "next": "/api/3/action/datastore_search?offset=10"
+        },
+        "total": 2
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "help": "http://urbalurba.no/api/3/action/help_show?name=datastore_create",
+    "success": true,
+    "result": {
+        "resource": {
+            "url": "_datastore_only_resource",
+            "mimetype": null,
+            "package_id": "apitest",
+            "name": "TerChris test dataset nr 1",
+            "format": "CSV"
+        },
+        "primary_key": "recordID",
+        "resource_id": "150587e6-0d24-416a-b019-7923b52bdaef",
+        "fields": [
+            {
+                "type": "numeric",
+                "id": "recordID"
+            },
+            {
+                "type": "text",
+                "id": "name"
+            },
+            {
+                "type": "numeric",
+                "id": "value"
+            },
+            {
+                "type": "numeric",
+                "id": "latitude"
+            },
+            {
+                "type": "numeric",
+                "id": "longitude"
+            },
+            {
+                "type": "bool",
+                "id": "myTrueFalse"
+            },
+            {
+                "type": "json",
+                "id": "myJsonField"
+            },
+            {
+                "type": "timestamp",
+                "id": "timestamp"
+            },
+            {
+                "info": {
+                    "notes": "You can set the label of the field",
+                    "label": "myTextLabel"
+                },
+                "type": "text",
+                "id": "myText"
+            }
+        ],
+        "records": [
+            {
+                "myJsonField": {
+                    "city": "Oslo",
+                    "age": "23"
+                },
+                "myTrueFalse": true,
+                "name": "jsonupdate",
+                "recordID": 999,
+                "timeStamp": "2018-03-14T05:51:36",
+                "myText": "Hello world",
+                "longitude": 10.762248,
+                "value": 100,
+                "latitude": 59.91562
+            }
+        ],
+        "method": "insert"
+    }
+}

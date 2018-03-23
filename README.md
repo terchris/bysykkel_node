@@ -33,12 +33,15 @@ https://gist.github.com/mheadd/a9bb37a51972cbff8ae0
 
 CKAN js module
 https://www.npmjs.com/package/ckan and https://github.com/okfn/ckan.js
+And examples http://giv-oct.uni-muenster.de/dev-corner/data/storage/datastore-upsert/
+See how to format records http://docs.ckan.org/en/latest/maintaining/datastore.html#records
 
 
 ## CKAN realtime
 http://alexandrainst.github.io/ckanext-realtime/tutorial.html
 
 ## CKAN API to add and update data in a dataset
+The doc http://docs.ckan.org/en/latest/maintaining/datastore.html
 
 Insert data into the CKAN Datastore
 ~$ curl -X POST http://www.civicdata.com/api/3/action/datastore_create \
@@ -71,3 +74,8 @@ I was thinking about doing it this way.
 
 I know how to do 1 and 2. But not 3.
 Is there a way to update one record in a dataset?
+
+
+
+### the ckan init
+npm install ckan

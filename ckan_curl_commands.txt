@@ -1,0 +1,44 @@
+
+
+
+
+http://urbalurba.no/dataset/apitest/resource/59c5a78f-9b23-4b89-994a-6d24bb3bf68f
+
+
+
+Insert data into the CKAN Datastore
+Doc is here 
+http://docs.ckan.org/en/latest/maintaining/datastore.html#ckanext.datastore.logic.action.datastore_upsert
+and https://github.com/open-data/ckanext-canada/wiki/ATI-API-HowTo
+
+
+
+curl http://urbalurba.no/api/3/action/datastore_upsert \
+-H"Authorization:${API_KEY}" -d @- <<JSON
+{
+ "resource_id": "59c5a78f-9b23-4b89-994a-6d24bb3bf68f",
+ "records":[
+  {
+   "recordID": "999",
+   "name": "curl1",
+   "value": "jalla",
+   "latitude": "59.939192",
+   "longitude": "10.759168",
+   "timeStamp": "2018-03-21T23:59:59+00:00"
+  }
+ ]
+}
+JSON
+
+
+
+
+
+
+~$ curl -X POST http://urbalurba.no/api/3/action/datastore_create \
+-H "Authorization: <API-KEY>" \
+-d '{"resource_id": "59c5a78f-9b23-4b89-994a-6d24bb3bf68f",
+ "fields": [ {"id": "a"}, {"id": "b"} ], 
+ "records": [ { "a": 1, "b": "XYZ"}, {"a": 2, "b": "ZZZ"} ],
+  "primary_key": ["a"],
+   "force": "True"}'
